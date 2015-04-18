@@ -30,7 +30,7 @@
     </target>
 
     <target name="phpunit">
-        <exec logoutput="true" command="${project.basedir}/vendor/bin/phpunit --coverage-clover=${project.basedir}/build/logs/clover.xml --coverage-html=${project.basedir}/build/coverage --log-junit=${project.basedir}/build/logs/junit.xml" escape="false"/>
+        <exec logoutput="true" command="${project.basedir}/vendor/bin/phpunit --coverage-clover=${project.basedir}/build/logs/clover.xml --coverage-html=${project.basedir}/build/coverage --log-junit=${project.basedir}/build/logs/junit.xml --coverage-crap4j=${project.basedir}/build/logs/crap4j.xml" escape="false"/>
     </target>
 
     <target name="phpcs">
