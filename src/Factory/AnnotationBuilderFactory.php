@@ -28,5 +28,5 @@ class AnnotationBuilderFactory implements FactoryInterface
             $serviceLocator->get('doctrine.entitymanager.orm_default'),
             $serviceLocator->get('FormElementManager')
         );
-     }
+    }
 }
