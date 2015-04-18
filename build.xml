@@ -9,12 +9,10 @@
 
     <target name="clean" description="Vide les répertoires d'artefacts">
         <delete dir="${project.basedir}/vendor"/>
-        <delete dir="${project.basedir}/build/api"/>
         <delete dir="${project.basedir}/build/coverage"/>
         <delete dir="${project.basedir}/build/logs"/>
         <delete dir="${project.basedir}/build/pdepend"/>
 
-        <mkdir dir="${project.basedir}/build/api"/>
         <mkdir dir="${project.basedir}/build/coverage"/>
         <mkdir dir="${project.basedir}/build/logs"/>
         <mkdir dir="${project.basedir}/build/pdepend"/>
@@ -32,7 +30,7 @@
     </target>
 
     <target name="phpunit">
-        <exec logoutput="true" command="${project.basedir}/vendor/bin/phpunit --coverage-clover=${project.basedir}/build/logs/clover.xml" escape="false"/>
+        <exec logoutput="true" command="${project.basedir}/vendor/bin/phpunit --coverage-clover=${project.basedir}/build/logs/clover.xml --coverage-html=${project.basedir}/build/coverage" escape="false"/>
     </target>
 
     <target name="phpcs">
