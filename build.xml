@@ -32,7 +32,7 @@
     </target>
 
     <target name="phpunit">
-        <exec logoutput="true" command="${project.basedir}/vendor/bin/phpunit" escape="false"/>
+        <exec logoutput="true" command="${project.basedir}/vendor/bin/phpunit --coverage-clover=${project.basedir}/build/logs/clover.xml" escape="false"/>
     </target>
 
     <target name="phpcs">
