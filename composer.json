@@ -1,21 +1,4 @@
 {
-    "name":         "mpalourdio/mpa-custom-doctrine-hydrator",
-    "description":  "Module that helps you deal with dates for DoctrineModule & ZF2 : filtering, hydration, Locale etc.",
-    "license":      "MIT",
-    "keywords":     [
-        "doctrine",
-        "orm",
-        "module",
-        "zf2"
-    ],
-    "homepage":     "https://github.com/mpalourdio/MpaCustomDoctrineHydrator",
-    "authors":      [
-        {
-            "name":     "@mpalourdio",
-            "email":    "mpalourdio@gmail.com",
-            "homepage": "https://github.com/mpalourdio"
-        }
-    ],
     "require":      {
         "php":                               ">=5.5",
         "doctrine/doctrine-orm-module":      "~0.8",
